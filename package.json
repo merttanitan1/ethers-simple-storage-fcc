@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "^2.22.7"
+  },
+  "devDependencies": {
+    "ethers": "^5.4",
+    "solc": "^0.8.26"
+  },
+  "scripts": {
+    "compile": "npx solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  }
+}
